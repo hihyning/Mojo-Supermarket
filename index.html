@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mojo Supermarket 2024 Intern Application Hyning Gan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+<link rel="icon" type="image/x-png" href="./HG Favicon MJS.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="supermarket">
+        <div id="entrance">
+            <button id="openDoors" onclick="openDoors()">SORRY,<BR>WE ARE OPEN.<BR><span style="font-size: 0.6em; line-height: 1%;">CLICK HERE TO ENTER</span></button>
+        </div>
+        <div id="shelves"><img src="./insidebg.png" style="width: 100vw; height: 100vh;" alt="Supermarket Background"usemap="#imageMap">
+            <div id="popupCard" style="display: none;">
+                <h1>Welcome to Hyning's Application for<br>Mojo Supermarket Summer Intern 2024<br><br></h1>
+                <p>I figured the best way for me to present my work is to aptly put it in a supermarket ◡̈<br><br>Click on the items on the shelves to learn more about me. Remember to CHECK OUT when you're done.</p>
+                <button id="startShoppingBtn" onclick="startShopping()"><h1>Start Shopping!</h1></button>
+            </div>
+            <div id="goals" onclick="toggleGoalsCard()">
+                <img src="./goals.png" alt="Flour">
+            </div>
+             <div id="goalsCard" style="display: none;">
+                <button id="closeCardBtn" onclick="closeGoalsCard()">✕</button>
+                <img src="./goals card.png">
+            </div>
+            <div id="whymojo" onclick="toggleMojoCard()">
+                <img src="./why mojo.png" alt="Cereal">
+            </div>
+            <div id="MojoCard" style="display: none;">
+                <button id="closeCardBtn" onclick="closeMojoCard()">✕</button>
+                <img src="./why mojo card.png">
+            </div>
+            <div id="brand" onclick="togglebrandCard()">
+                <img src="./brand.png" alt="Milk">
+            </div>
+            <div id="brandCard" style="display: none;">
+                <button id="closeCardBtn" onclick="closebrandCard()">✕</button>
+                <img src="./brand card.png">
+            </div>
+            <div id="skills" onclick="toggleskillsCard()">
+                <img src="./skills.png" alt="Juice">
+            </div>
+            <div id="skillsCard" style="display: none;">
+                <button id="closeCardBtn" onclick="closeskillsCard()">✕</button>
+                <img src="./skills card.png">
+            </div>
+            <div id="team" onclick="toggleteamCard()">
+                <img src="./team work.png" alt="Yogurt">
+            </div>
+            <div id="teamCard" style="display: none;">
+                <button id="closeCardBtn" onclick="closeteamCard()">✕</button>
+                <img src="./team card.png">
+            </div>  <div id="unique" onclick="toggleuniqueCard()">
+                <img src="./unique.png" alt="Sugar">
+            </div>
+            <div id="uniqueCard" style="display: none;">
+                <button id="closeCardBtn" onclick="closeuniqueCard()">✕</button>
+                <img src="./unique card.png">
+            </div>
+            <div id="meme" onclick="togglememeCard()">
+            <img src="./meme.png" alt="Sugar">
+        </div>
+        <div id="memeCard" style="display: none;">
+            <button id="closeCardBtn" onclick="closememeCard()">✕</button>
+            <img src="./meme.gif">
+        </div>
+        <div id="interaction" onclick="toggleinteractionCard()">
+            <img src="./interaction.png" alt="Laptop">
+        </div>
+        <div id="interactionCard" style="display: none;">
+            <button id="closeCardBtn" onclick="closeinteractionCard()">✕</button>
+            <img src="./meme.gif">
+        </div>
+        <div id="hello" onclick="togglehelloCard()">
+            <img src="./hello.png" alt="Books1">
+        </div>
+        <div id="helloCard" style="display: none;">
+            <button id="closeCardBtn" onclick="closehelloCard()">✕</button>
+            <img src="./meme.gif">
+        </div>
+        <div id="butter" onclick="togglebutterCard()">
+            <img src="./butter.png" alt="Cake">
+        </div>
+        <div id="butterCard" style="display: none;">
+            <button id="closeCardBtn" onclick="closebutterCard()">✕</button>
+            <img src="./meme.gif">
+        </div>
+        <div id="embodied" onclick="toggleembodiedCard()">
+            <img src="./embodied.png" alt="Books2">
+        </div>
+        <div id="embodiedCard" style="display: none;">
+            <button id="closeCardBtn" onclick="closeembodiedCard()">✕</button>
+            <img src="./meme.gif">
+        </div>
+        <div id="poster" onclick="toggleposdterCard()">
+            <img src="./poster.png" alt="Eggs">
+        </div>
+        <div id="posterCard" style="display: none;">
+            <button id="closeCardBtn" onclick="closeposterCard()">✕</button>
+            <img src="./meme.gif">
+        </div>
+        <div id="hyning" onclick="togglehyningCard()">
+            <img src="./hyning.png" alt="Soap">
+        </div>
+        <div id="hyningCard" style="display: none;">
+            <button id="closeCardBtn" onclick="closehyningCard()">✕</button>
+            <img src="./meme.gif">
+        </div>
+        <div id="motion" onclick="togglemotionCard()">
+            <img src="./motion.png" alt="Cleaner">
+        </div>
+        <div id="motionCard" style="display: none;">
+            <button id="closeCardBtn" onclick="closemotionCard()">✕</button>
+            <img src="./meme.gif">
+        </div>
+        <div id="toilet" onclick="toggletoiletCard()">
+            <img src="./toilet.png" alt="Toilet">
+        </div>
+        <div id="toiletCard" style="display: none;">
+            <button id="closeCardBtn" onclick="closetoiletCard()">✕</button>
+            <img src="./meme.gif">
+        </div>
+        <div id="peace" onclick="togglepeaceCard()">
+            <img src="./peace.png" alt="Cans">
+        </div>
+        <div id="peaceCard" style="display: none;">
+            <button id="closeCardBtn" onclick="closepeaceCard()">✕</button>
+            <img src="./meme.gif">
+        </div>
+            <div id="externalLinks">
+                <div class="externalLink" id="instagramLink" onclick="openExternalPage('https://www.instagram.com/byhyning/')">
+                    <img src="./apple.png" alt="Instagram">
+                </div>
+                <div class="externalLink" id="websiteLink" onclick="openExternalPage('https://www.hyninggan.com/')">
+                    <img src="./orange.png" alt="Website">
+                </div>
+                <div class="externalLink" id="linkedinLink" onclick="openExternalPage('https://www.linkedin.com/in/hyninggan/')">
+                <img src="./watermelon.png" alt="Linkedin">
+                </div>
+                <div class="externalLink" id="githubLink" onclick="openExternalPage('https://github.com/hihyning')">
+                    <img src="./peach.png" alt="Github"></div>
+                </div>
+            
+            </div>
+            
+            <div class="shelf" id="graphicDesignShelf">
+                <!-- Graphic Design projects go here -->
+            </div>
+            <div class="shelf" id="interactionShelf">
+                <!-- Interaction projects go here -->
+            </div>
+            <div class="shelf" id="whyHireShelf">
+                <!-- Reasons to hire you go here -->
+            </div>
+        </div>
+        <div id="shoppingCart" class="shoppingCart"><img src="./shopping cart.png"></div>
+        <div id="featuredStand" onclick="showAboutCard()"><img src="./about.png"></div>
+        <div id="checkout" onclick="toggleContactPopup()"><img src="./checkout.png" alt="Checkout"></div>
+        <div id="aboutCard" style="display: none;">
+            <button style="margin-left: 2.5%; margin-top: 5%" id="closeCardBtn" onclick="closeAboutCard()">✕</button>
+            <img src="./about card.png">
+        </div>
+    </div>
+    <div id="contactPopup"><a href="mailto:hyninggan@gmail.com">HYNINGGAN@GMAIL.COM</a>
+    </div>
+    <map name="imageMap">
+        <area shape="rect" coords="x1,y1,x2,y2" onclick="openLink1()" alt="Area 1">
+        <area shape="rect" coords="x3,y3,x4,y4" onclick="openLink2()" alt="Area 2">
+        <!-- Add more areas as needed -->
+    </map>
+    <script src="script.js"></script>
+</body>
+</html>
